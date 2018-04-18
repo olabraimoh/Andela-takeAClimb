@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Address</title>
+    <meta charset="UTF-8">
+    <link href="addressPot.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Addressbook.js"></script>    
+</head>
+
+<body onload="init()">
+<header class="headerBar"><h1>Address Book</h1></header>
+<div id="containment">
+    <form id="addressBook">
+    <div>
+        <label for="name"><strong>Full Name:</strong></label><br>
+        <input id="name" type="text" placeholder="enter your name here...">        
+    </div>
+    <div>    
+        <br><label for="phone"><strong>Phone number:</strong></label><br>
+        <input id="phone" type="text" placeholder="enter your phone number here...">        
+    </div>
+    <div>
+        <br><label for="email"><strong>Email Address:</strong></label><br>
+        <input id="email" type="text" placeholder="enter your email address here...">        
+    </div>
+    <div>
+        <br><button id="submit" onclick="onSubmitPress()">Submit</button>
+        <button id="clear" onclick="onClearPress()">Clear</button>
+    </div>
+    </form>
+    <table id="contactsTable">
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Phone Number</th>
+                <th>Email Address</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="tableRows">
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

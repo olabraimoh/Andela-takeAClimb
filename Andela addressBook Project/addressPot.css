@@ -1,0 +1,83 @@
+body {
+    background-color: #ebec82;
+}
+
+h1 {
+    color: #03490e;
+    text-align: center;
+}
+
+#containment {
+    font-family: Verdana;
+    font-size: 15px;
+    margin: 35px auto;
+}
+
+form{
+    margin: 0 auto;
+}
+
+#addressBook label{
+    display: inline-block;
+    color: #797979;
+}
+
+#addressBook input{
+    width: 300px;
+    padding: 5px;
+    color: #949494;
+    font-family: Arial;
+    font-size: 15px;
+    border: 1px solid #cecece;
+}
+
+#addressBook div{
+    margin-bottom: 1px;
+}
+
+#addressBook div ::-webkit-input-placeholder{
+    margin-left: 10px;
+    color: #b1b1b1;
+    font-size: 15px;
+    font-style: italic;
+}
+
+#addressBook #submit{
+    background: #6f9ff1;
+    color: #fff;
+    font-weight: 1000;
+    font-style: normal;
+    cursor: pointer;
+}
+
+#addressBook #submit:hover{
+    background: #79a7f1;
+}
+
+button{
+    width: 100px;
+}
+
+.headerBar{
+    margin: 0 auto;
+    font-family: Verdana;
+    font-size: 15px;
+    padding: 5px;
+    background: #a3e0e0;
+    min-height: 50px;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+th{
+    background: #a3e0e0;
+}
+
+th,td{
+    border: 2px solid black;
+    padding: 10px;
+}
