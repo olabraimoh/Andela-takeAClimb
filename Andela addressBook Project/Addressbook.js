@@ -66,15 +66,17 @@ var selectedIndex = -1;
     }
 
     $(document).ready(function () {
-        $('.full_name').on('click', function() {
-            if ($($(this).siblings()[1]).is(':visible'))
-            {
-                $($(this).siblings()[0]).hide();
-                $($(this).siblings()[1]).hide();
-            } else {
-                    $(this).siblings().show();
-            }
-            console.log('calling');
-            
+            $('body').on('click','.full_name', function() {
+                if ($($(this).siblings()[1]).find('span').is(':visible'))
+                {
+                    $($(this).siblings()[0]).find('span').hide();
+                    $($(this).siblings()[1]).find('span').hide();
+                } else {
+                    $($(this).siblings()[0]).find('span').show();
+                    $($(this).siblings()[1]).find('span').show();
+                }
+                console.log('calling');
+                
+            });
         });
     });
